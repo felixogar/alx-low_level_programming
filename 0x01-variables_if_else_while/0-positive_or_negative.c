@@ -1,13 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/**
- *main - main block 
- *description: get a random number and print number
- *return 0
- */
-int main(void)
+/* main - Entry point */
 
+/* Return: Always 0.*/
+int main(void)
 {
 	int n;
 
