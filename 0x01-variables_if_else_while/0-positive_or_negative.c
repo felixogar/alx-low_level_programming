@@ -6,19 +6,17 @@
 
 /* more headers goes there */
 
-/**
+/*
  *
- *  * main - entry point for function
+ * main - entry point for function
  *
- *   *
+ *   
  *
- *    * Description: decides if a random number is odd or even
+ * Description: decides if a random number is odd or even
  *
- *     *
  *
- *      * Return: always 0 (success)
- *
- *       */
+ *Return: always 0 (success)
+ */
 
 /* betty style doc for function main goes there */
 
