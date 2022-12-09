@@ -1,9 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* main - Entry poit  */
-/* Return: Always 0.*/
-/* main - Prints a random number and states whether it is positive, negative, or zero.*/
+
+/** main - Entry point
+ *
+ * Description: decides if a random number is odd or even
+ * 
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int n;
