@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-
 /* main - entry point function */
+
 /*Description: prints only last digit of num stored in number n */
+
 /*Return: always 0 (success)*/
 
 int main(void)
