@@ -1,61 +1,39 @@
-/*
- *
- *  * File: 0-positive_or_negative.c
- *
- *   * Auth: Brennan D Baraban
- *
- *    */
-
-
-
-#include <stdlib.h>
-
-#include <time.h>
+nclude <stdlib.h>
 
 #include <stdio.h>
 
+#include <time.h>
 
+/* more headers goes there */
 
 /**
  *
- *  * main - Prints a random number and states whether
+ *  * main - entry point for function
  *
- *   *        it is positive, negative, or zero.
+ *   *
  *
- *    *
+ *    * Description: decides if a random number is odd or even
  *
- *     * Return: Always 0.
+ *     *
  *
- *     */
+ *      * Return: always 0 (success)
+ *
+ *       */
+
+/* betty style doc for function main goes there */
 
 int main(void)
 
 {
+	int n;
 
-		int n;
-
-
-
-			srand(time(0));
-
-				n = rand() - RAND_MAX / 2;
-
-
-
-					if (n > 0)
-
-								printf("%d is positive\n", n);
-
-						else if (n < 0)
-
-									printf("%d is negative\n", n);
-
-							else
-
-										printf("%d is zero\n", n);
-
-
-
-								return (0);
-
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%i is positive\n", n);
+	else if (n == 0)
+		printf("%i is zero\n", n);
+	else
+		printf("%i is negative\n", n);
+	return (0);
 }
