@@ -2,12 +2,9 @@
 #include <stdio.h>
 #include <time.h>
 
-/* main - Entry point
-*
-* Description: decides if a random number is odd or even
-* 
-* Return: Always 0 (Success)
-*/
+/* main - Entry point */
+/* Description: decides if a random number is odd or even */
+/* Return: Always 0 (Success) */
 
 int main(void)
 {
