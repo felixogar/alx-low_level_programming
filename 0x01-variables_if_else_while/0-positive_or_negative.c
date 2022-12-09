@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* main - Entry point */
-
+/* main - Entry poit  */
 /* Return: Always 0.*/
+/* main - Prints a random number and states whether it is positive, negative, or zero.*/
 int main(void)
 {
 	int n;
