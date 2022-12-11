@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
- * main - prints the size of various types on the computer
+ * main -prints the size of various types on the computer
  * Return: 0
  *
 */
-main(void)
 int main(void)
 {
 	 char a;
