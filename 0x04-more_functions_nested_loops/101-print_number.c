@@ -1,24 +1,30 @@
-#include “main.h”
-#include <stdio.h>
-/**
-* Print_number – prints int with putchar
-*on: takes number, hello
-*
-* Return:void
-*/
+#include "main.h"
 
+/**
+ * print_number - prints an arbitrary integer using putchar
+ *
+ * @n: integer to print
+ *
+ * Return: void
+ */
 void print_number(int n)
 {
-    unsigned int m;
-    if (n < o)
-{
-    putchar('-');
-    m = -n;
-}
-else
-{
-    m = n;
-}
-if (m /10 != 0)
-print_number(m / 10);
+	unsigned int u, i;
+
+	if (n < 0)
+	{
+		u = -n;
+		_putchar('-');
+	}
+	else
+	{
+		u = n;
+	}
+
+	i = 1000000000;
+	do {
+		if (i <= u || i == 1)
+			_putchar(u / i % 10 + '0');
+		i /= 10;
+	} while (i != 0);
 }

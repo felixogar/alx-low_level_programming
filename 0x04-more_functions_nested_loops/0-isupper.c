@@ -1,14 +1,30 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _isupper - a function that checks for uppercase character
- * @c: input
- * Return: 1 if c is uppercase, 0 otherwise
+ * print_number - prints an arbitrary integer using putchar
+ *
+ * @n: integer to print
+ *
+ * Return: void
  */
-int _isupper(int c)
+void print_number(int n)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		return (1);
+	unsigned int u, i;
+
+	if (n < 0)
+	{
+		u = -n;
+		_putchar('-');
+	}
 	else
-		return (0);
+	{
+		u = n;
+	}
+
+	i = 1000000000;
+	do {
+		if (i <= u || i == 1)
+			_putchar(u / i % 10 + '0');
+		i /= 10;
+	} while (i != 0);
 }
