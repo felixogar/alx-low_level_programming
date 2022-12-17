@@ -1,17 +1,21 @@
-#include "felix.o"
-
+#include "main.h"
 /**
- * main - Entry point
+ * main - main function .
  *
- * Return: Always 0
+ * Return: 0
  */
 int main(void)
 {
-	_putchar('F');
-	_putchar('e');
-	_putchar('l');
-	_putchar('i');
-	_putchar('x');
+	char h[] = "Holberton";
+	int s = sizeof(h);
+	int i;
+
+	for (i = 0; i < s; i++)
+	{
+		_putchar(h[i]);
+
+	}
+
 	_putchar('\n');
 	return (0);
 }
