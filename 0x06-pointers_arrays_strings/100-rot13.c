@@ -1,28 +1,31 @@
 #include "main.h"
 /**
- * rot13 - rot13 encoding
- * Return: pointer to arr
- * @s: string
+ * rot13 - encodes a string using rot13
+ * @str: the string to encode
+ *
+ * Return: encode string
  */
-char *rot13(char *s)
+char *rot13(char *str)
 {
-	char half1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+  int i, j;
 
-	char half2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+  char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	int i = 0, j;
-
-	while (s[i] != 0)
+  i = 0;
+  while (str[i] != '\0')
+    {
+      j = 0;
+      while (alpha[j] != '\0')
 	{
-		char c = s[i];
-
-		for (j = 0; j < 52; j++)
-		{
-			if (c == half1[j])
-			{
-				s[i] = half2[j];
-			}
-		}
-		i++;
+	  if (str[i] == alpha[j])
+	    {
+	      str[i] = rot[j];
+	      break;
+	    }
+	  j++;
 	}
-	return (s);
+      i++;
+    }
+  return (str);
+}
